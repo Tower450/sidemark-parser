@@ -1,0 +1,24 @@
+{
+  "name": "netscape_parser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "parser.js",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node ./src/parser.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/team-chiru/sidemark-parser.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/team-chiru/sidemark-parser/issues"
+  },
+  "homepage": "https://github.com/team-chiru/sidemark-parser#readme"
+}

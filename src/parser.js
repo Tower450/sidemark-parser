@@ -5,7 +5,7 @@ var cheerio = require('cheerio')
 
 // console.log(cli)
 
-var $ = cheerio.load(fs.readFileSync(path.resolve('test.html')))
+var $ = cheerio.load(fs.readFileSync(path.resolve('./src/netscape/test.html')))
 
 // console.log($)
 
@@ -56,4 +56,4 @@ $('a').each(function(index, a) {
 console.log('There is the json structure')
 console.log(JSON.stringify(jsonbmArray, null, 4))
 
-fs.writeFileSync('test.json',JSON.stringify(jsonbmArray, null, 4))
+fs.writeFileSync('./src/json_output/test.json',JSON.stringify(jsonbmArray, null, 4))
