@@ -4,11 +4,12 @@
   "description": "",
   "main": "parser.js",
   "dependencies": {
+    "bookmarks-parser": "^0.1.2",
     "cheerio": "^1.0.0-rc.2"
   },
   "devDependencies": {},
   "scripts": {
-    "start": "node ./src/parser.js",
+    "start": "node ./src/bookmarkparser.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

@@ -6,7 +6,6 @@ var cheerio = require('cheerio')
 const bookmarkFilePath = './src/netscape/chrome.html'
 const savePath = './src/json_output/chrome.json'
 var $ = cheerio.load(fs.readFileSync(path.resolve(bookmarkFilePath)))
-// console.log($)
 
 function getCategories($a) {
     var $node = $a.closest('DL').prev();
@@ -54,6 +53,5 @@ $('a').each(function(index, a) {
 
 console.log('There is the json structure')
 console.log(JSON.stringify(jsonbmArray, null, 4))
-
 
 fs.writeFileSync(savePath, JSON.stringify(jsonbmArray, null, 4))
